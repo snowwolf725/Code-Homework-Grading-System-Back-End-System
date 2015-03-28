@@ -7,7 +7,7 @@ public class test
 	{ 
 		try 
 		{ 
-			Process p=Runtime.getRuntime().exec("../dos.bat"); 
+			Process p=Runtime.getRuntime().exec("ls"); 
 			p.waitFor(); 
 			BufferedReader reader=new BufferedReader(new InputStreamReader(p.getInputStream())); 
 			String line=reader.readLine(); 
