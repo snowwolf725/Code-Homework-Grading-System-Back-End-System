@@ -1,1 +1,1 @@
-javac Q1.java
+ant

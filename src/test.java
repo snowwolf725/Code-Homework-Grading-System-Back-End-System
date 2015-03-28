@@ -7,7 +7,7 @@ public class test
 	{ 
 		try 
 		{ 
-			Process p=Runtime.getRuntime().exec("cmd /c C:/Users/user1/workspace/test/dos.bat"); 
+			Process p=Runtime.getRuntime().exec("cmd /c ../dos.bat"); 
 			p.waitFor(); 
 			BufferedReader reader=new BufferedReader(new InputStreamReader(p.getInputStream())); 
 			String line=reader.readLine(); 
