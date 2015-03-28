@@ -1,2 +1,1 @@
-cd ..
-ant
+unzip ../123.zip
