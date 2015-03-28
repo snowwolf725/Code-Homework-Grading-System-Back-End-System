@@ -1,2 +1,3 @@
-cd bin
+cd src
+javac test.java
 java test
