@@ -5,7 +5,7 @@ public class test
 { 
 	public static void main(String args[]) 
 	{ 
-		/*try 
+		try 
 		{ 
 			Process p=Runtime.getRuntime().exec("../dos.bat"); 
 			p.waitFor(); 
@@ -19,7 +19,7 @@ public class test
 			} 
 		} 
 		catch(IOException e1) {} 
-		catch(InterruptedException e2) {} */
-		System.out.println("hi");
+		catch(InterruptedException e2) {} 
+		//System.out.println("hi");
 	} 
 } 
