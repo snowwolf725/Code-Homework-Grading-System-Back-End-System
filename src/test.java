@@ -1,24 +1,15 @@
-
-import java.io.*; 
-
-public class test 
-{ 
-	public static void main(String args[]) 
-	{ 
-		try 
-		{ 
-			Process p=Runtime.getRuntime().exec("cd ../dos.bat"); 
-			p.waitFor(); 
-			BufferedReader reader=new BufferedReader(new InputStreamReader(p.getInputStream())); 
-			String line=reader.readLine(); 
-			while(line!=null) 
-			{ 
-				
-				System.out.println(line); 
-				line=reader.readLine(); 
-			} 
-		} 
-		catch(IOException e1) {} 
-		catch(InterruptedException e2) {} 
-	} 
-} 
+import java.io.*;
+import java.net.*;
+import java.util.*;
+ 
+public class test{
+        public static void main(String a[]) throws Exception{
+                Process pl = Runtime.getRuntime().exec("/bin/ls");
+                String line = "";
+                BufferedReader p_in = new BufferedReader(new InputStreamReader(pl.getInputStream()));
+                while((line = p_in.readLine()) != null){
+                        System.out.println(line);
+                }
+                p_in.close();
+        }
+}
